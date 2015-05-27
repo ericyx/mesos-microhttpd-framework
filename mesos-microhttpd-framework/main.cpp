@@ -1,6 +1,6 @@
 #include <iostream>       // std::cout
 #include <thread>         // std::thread
-#include "test_framework.cpp"       // std::cout
+#include <test_framework.hpp>       // std::cout
 
 int main(int argc, char** argv)
 {

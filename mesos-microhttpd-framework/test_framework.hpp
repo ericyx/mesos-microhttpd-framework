@@ -34,8 +34,8 @@
 #include <stout/os.hpp>
 #include <stout/stringify.hpp>
 
-#include "logging/flags.hpp"
-#include "logging/logging.hpp"
+#include <logging/flags.hpp>
+#include <logging/logging.hpp>
 
 using namespace mesos;
 
