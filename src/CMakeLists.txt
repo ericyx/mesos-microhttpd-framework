@@ -1,11 +1,7 @@
-cmake_minimum_required(VERSION 2.8)
-
-PROJECT(main)
-
 SET(CMAKE_CXX_FLAGS "-std=c++11")
 
 INCLUDE_DIRECTORIES(/usr/include)
 INCLUDE_DIRECTORIES(/usr/local/include)
 
-ADD_EXECUTABLE(main main.cpp)
-TARGET_LINK_LIBRARIES(main /usr/lib/libtest_framework.so /usr/local/lib/libmesos-0.22.1.so)
+add_library(mesos-microhttpd-framework SHARED test_framework.cpp test_microhttpd.cpp)
+TARGET_LINK_LIBRARIES(mesos-microhttpd-framework /usr/local/lib/libmesos-0.22.1.so /usr/local/lib/libglog.so /usr/local/lib/libmicrohttpd.so)

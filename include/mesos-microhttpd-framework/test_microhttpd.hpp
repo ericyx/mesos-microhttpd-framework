@@ -29,4 +29,19 @@
 
 #define PAGE "<html><head><title>File not found</title></head><body>File not found</body></html>"
 
+static ssize_t
+file_reader (void *cls, uint64_t pos, char *buf, size_t max);
+
+static void
+free_callback (void *cls);
+
+static int
+ahc_echo (void *cls,
+          struct MHD_Connection *connection,
+          const char *url,
+          const char *method,
+          const char *version,
+          const char *upload_data,
+	  size_t *upload_data_size, void **ptr);
+
 int testMicrohttpd(int port);
