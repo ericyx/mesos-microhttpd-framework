@@ -15,15 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="..\src\main.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_framework.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="..\src\test_framework.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\test_microhttpd.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="test_framework.hpp">
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\mesos-microhttpd-framework\FrameworkDriver.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\mesos-microhttpd-framework\FrameworkDriverManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\mesos-microhttpd-framework\test_framework.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\mesos-microhttpd-framework\test_microhttpd.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
