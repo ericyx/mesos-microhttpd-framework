@@ -10,6 +10,17 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\test_framework.cpp" />
+    <ClCompile Include="..\src\test_microhttpd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\mesos-microhttpd-framework\FrameworkDriver.hpp" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\mesos-microhttpd-framework\FrameworkDriverManager.hpp" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\mesos-microhttpd-framework\test_framework.hpp" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\mesos-microhttpd-framework\test_microhttpd.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{463511FA-6D21-43E7-A38D-F82ADAD081E2}</ProjectGuid>
     <RootNamespace>mesosmicrohttpdframework</RootNamespace>
@@ -63,13 +74,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="test_framework.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="test_framework.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
